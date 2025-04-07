@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatDox</title>
+    <!-- Reference CSS from the /static/ directory -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Add Annyang library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        ChatDox
+        <!-- Login & Sign Up Buttons (aligned to the top-right) -->
+        <div class="auth-container">
+            <button class="auth-button" id="loginBtn">Login</button>
+            <button class="auth-button" id="signUpBtn">Sign Up</button>
+        </div>
+    </header>
+
+    <div class="chat-container">
+        <!-- Left side: Chat area with responses and query input -->
+        <div class="chat-area">
+            <!-- Messages will be dynamically added here -->
+            <div class="messages-container" id="messagesContainer"></div>
+
+            <!-- Input Section (Search Bar) -->
+            <div class="query-container">
+                <textarea id="query" placeholder="Ask something..." required></textarea>
+                <button class="send-button" type="button" id="sendBtn">Send</button>
+                <!-- Voice Button -->
+                <button class="voice-button" type="button" id="voiceBtn" title="Use voice mode">
+                    <img src="https://img.icons8.com/?size=100&id=85759&format=png&color=000000" alt="Microphone" id="micIcon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reference JS from the /static/ directory -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
